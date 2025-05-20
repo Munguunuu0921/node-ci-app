@@ -3,10 +3,10 @@ pipeline {
 
     stages {
         stage('Clone from GitHub') {
-            steps {
-                git 'https://github.com/Munguunuu0921/node-ci-app.git'
-            }
-        }
+              steps {
+                       git branch: 'main', url: 'https://github.com/Munguunuu0921/node-ci-app.git'
+                  }
+                }
 
         stage('Build Docker Image') {
             steps {
