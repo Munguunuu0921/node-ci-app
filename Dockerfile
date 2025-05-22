@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # App ажиллах портыг нээх
-EXPOSE 3000
+EXPOSE 3001
 
 # App-г ажиллуулах command
 CMD ["npm", "start"]

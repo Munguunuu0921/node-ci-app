@@ -17,7 +17,7 @@ pipeline {
                 sh '''
                     docker stop node-ci-app || true
                     docker rm node-ci-app || true
-                    docker run -d -p 3000:3000 --name node-ci-app node-ci-app
+                    docker run -d -p 3001:3000 --name node-ci-app node-ci-app
                 '''
             }
         }
